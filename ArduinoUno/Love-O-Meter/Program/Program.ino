@@ -1,22 +1,18 @@
 constexpr int sensorPin = A0;
 float baselineTemp;
 
+constexpr int stringBufferSize = 256;
+char stringBuffer[stringBufferSize];
+
 float getCurrentTemperature() {
   int sensorValue = analogRead(sensorPin);
   float voltage = (sensorValue/1024.0f) * 5.0f;
   float temperature = (voltage - 0.5f) * 100;
-  
-  // logging could be turned off
-  Serial.print("Sensor value: ");
-  Serial.print(sensorValue);
-  
-  Serial.print(", Volts: ");
-  Serial.print(voltage);
-  
-  Serial.print(", degrees C: ");
-  Serial.print(temperature);
 
-  Serial.print("\n");
+  // logging could be turned off
+  sprintf(stringBuffer, "Sensor value: %i, Volts: %.3f, degrees C: %.3f",
+    sensorValue, voltage, temperature);
+  Serial.println(stringBuffer);
 
   return temperature;
 }
