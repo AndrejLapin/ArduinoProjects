@@ -1,0 +1,56 @@
+<shape h="750" w="100" name="Aruino Uno" aspect="variable" strokewidth="inherit">
+  <connections>
+    <constraint x="0.5" y="0" perimeter="1" />
+    <constraint x="0.5" y="1" perimeter="1" />
+    <constraint x="1" y="0.06667" perimeter="1" />
+    <constraint x="1" y="0.13333" perimeter="1" />
+    <constraint x="1" y="0.2" perimeter="1" />
+    <constraint x="1" y="0.26667" perimeter="1" />
+    <constraint x="1" y="0.33333" perimeter="1" />
+    <constraint x="1" y="0.4" perimeter="1" />
+    <constraint x="1" y="0.46667" perimeter="1" />
+    <constraint x="1" y="0.53333" perimeter="1" />
+    <constraint x="1" y="0.6" perimeter="1" />
+    <constraint x="1" y="0.66667" perimeter="1" />
+    <constraint x="1" y="0.73333" perimeter="1" />
+    <constraint x="1" y="0.8" perimeter="1" />
+    <constraint x="1" y="0.86667" perimeter="1" />
+    <constraint x="1" y="0.93333" perimeter="1" />
+    <constraint x="0" y="0.6" perimeter="1" />
+    <constraint x="0" y="0.66667" perimeter="1" />
+    <constraint x="0" y="0.73333" perimeter="1" />
+    <constraint x="0" y="0.8" perimeter="1" />
+    <constraint x="0" y="0.86667" perimeter="1" />
+    <constraint x="0" y="0.93333" perimeter="1" />
+  </connections>
+  <background>
+  </background>
+  <foreground>
+    <fillstroke />
+    <rect x="0" y="0" w="100" h="750"/>
+    <stroke />
+    <text str="5V" x="50" y="0" align="center" valign="top"/>
+    <text str="ARDUINO UNO" x="0" y="100" align="left" valign="middle"/>
+    <text str="13" x="100" y="50" align="right" valign="middle"/>
+    <text str="12" x="100" y="100" align="right" valign="middle"/>
+    <text str="~11" x="100" y="150" align="right" valign="middle"/>
+    <text str="~10" x="100" y="200" align="right" valign="middle"/>
+    <text str="~9" x="100" y="250" align="right" valign="middle"/>
+    <text str="8" x="100" y="300" align="right" valign="middle"/>
+    <text str="7" x="100" y="350" align="right" valign="middle"/>
+    <text str="~6" x="100" y="400" align="right" valign="middle"/>
+    <text str="~5" x="100" y="450" align="right" valign="middle"/>
+    <text str="4" x="100" y="500" align="right" valign="middle"/>
+    <text str="~3" x="100" y="550" align="right" valign="middle"/>
+    <text str="2" x="100" y="600" align="right" valign="middle"/>
+    <text str="TX 🡒 1" x="100" y="650" align="right" valign="middle"/>
+    <text str="RX 🡐 0" x="100" y="700" align="right" valign="middle"/>
+    <text str="A0" x="0" y="450" align="left" valign="middle"/>
+    <text str="A1" x="0" y="500" align="left" valign="middle"/>
+    <text str="A2" x="0" y="550" align="left" valign="middle"/>
+    <text str="A3" x="0" y="600" align="left" valign="middle"/>
+    <text str="A4" x="0" y="650" align="left" valign="middle"/>
+    <text str="A5" x="0" y="700" align="left" valign="middle"/>
+    <text str="GND" x="50" y="750" align="center" valign="bottom"/>
+  </foreground>
+</shape>
