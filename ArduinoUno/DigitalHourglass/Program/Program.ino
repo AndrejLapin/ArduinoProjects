@@ -22,16 +22,17 @@ void setup() {
 
 void loop() {
   uint32_t currentTime = millis();
-  if (led < 8) {
+  if (led < 8 && led > 1) {
     if (currentTime - previousTime > interval) {
       previousTime = currentTime;
       digitalWrite(led, HIGH);
-      led++;
+      led += (switchState == HIGH) - (switchState == LOW);
     }
   } else if (currentTime - previousTime > flashInterval) {
     previousTime = currentTime;
-    writePins(led >= 9, 2, 3, 4, 5, 6, 7);
-    led += (led < 9) - (led >= 9);
+    bool op = (switchState == HIGH && led >= 9) || (switchState == LOW && led <= 1);
+    writePins(op, 2, 3, 4, 5, 6, 7);
+    led += !(op) - (op);
   }
 
   switchState = digitalRead(switchPin);
@@ -40,8 +41,11 @@ void loop() {
     for(int x = 2; x < 8; x++) {
       digitalWrite(x, LOW);
     }
-
-    led = 2;
+    if (switchState == HIGH) {
+      led = 2;
+    } else {
+      led = 7;
+    }
     previousTime = currentTime;
   }
   prevSwitchState = switchState;
